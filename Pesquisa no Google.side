@@ -1,0 +1,69 @@
+{
+  "id": "db34d9ff-944b-450a-afde-4b62a7e5a759",
+  "version": "2.0",
+  "name": "Pesquisa no Google",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "cfa4e6ee-5d58-48c6-a029-1ac6e3f7d982",
+    "name": "Untitled",
+    "commands": [{
+      "id": "380325f8-57e2-475e-b171-b3339ee5c529",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a6ac3747-09dd-4fb8-8442-426363da95dd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "929x1012",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "264fe4e0-df96-4d4e-a115-52eac01fff21",
+      "comment": "",
+      "command": "type",
+      "target": "id=APjFqb",
+      "targets": [
+        ["id=APjFqb", "id"],
+        ["name=q", "name"],
+        ["css=#APjFqb", "css:finder"],
+        ["xpath=//textarea[@id='APjFqb']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Etec Camargo Aranha"
+    }, {
+      "id": "e7dccabd-5092-43c4-a9d3-fedea121598b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Livros",
+      "targets": [
+        ["linkText=Livros", "linkText"],
+        ["css=div:nth-child(7) > .LatpMc", "css:finder"],
+        ["xpath=//div[@id='hdtb-sc']/div/div/div/div/div[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/search?sca_esv=55a27dbe3d9f4d2d&q=Etec+Camargo+Aranha&tbm=bks&source=lnms&fbs=AEQNm0AuaLfhdrtx2b9ODfK0pnmi046uB92frSWoVskpBryHTlk_BnclDEVJ373ohNdpcnUA2Q9glauq2hv-jmZkIjtHSldP9METoeXf7m00-M5nFgKyzma51mhkuqi1Ei2x7rywLiOJlHAXAnEP8Szvz1kbN764KiF4D6PSm27LGkR73AV7DKXe2WeAIzjaxU-xBeK-vnma17hzcNNWTOSv19Q9l5562A&sa=X&ved=2ahUKEwikxYX97ZeIAxW6kZUCHR_9AkUQ0pQJegQICRAB')]", "xpath:href"],
+        ["xpath=//div[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Livros')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "552c2b6f-069f-494c-ab35-0db9c2aa0a43",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b47952be-6816-4fbd-a096-6cf01c91c500",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["cfa4e6ee-5d58-48c6-a029-1ac6e3f7d982"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}
